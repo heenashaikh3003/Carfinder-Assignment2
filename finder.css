@@ -1,0 +1,1297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    position: relative;
+}
+.side-btn a:hover i{
+    transform: rotate(380deg);
+    transition: 0.5s;
+}
+.side-btn a:hover{
+    border: 1px solid rgba(128, 128, 128, 0.845);
+}
+.side-btn .a1{
+    width: auto;
+    padding: 10px;
+    display: block;
+    position: fixed;
+    top: 400px;
+    right: -30px;
+    z-index: 4;
+    color: grey;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.272);
+    border-radius: 50px;
+    transform: rotate(-90deg);
+}
+.side-btn .a2{
+    margin-bottom: 10px;
+    padding: 10px;
+    display: block;
+    position: fixed;
+    top: 510px;
+    right: -1px;
+    z-index: 4;
+    color: grey;
+    background-color: white;
+    border: 1px solid rgba(128, 128, 128, 0.272);
+    border-radius: 50px;
+    transform: rotate(-90deg);
+}
+header{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color:white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+header .menu{
+    font-size: 30px;
+    display: none;
+}
+header h2{
+    font-size: 30px;
+}
+header nav{
+    width: 50%;
+}
+header nav ul{
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+header nav ul li a{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.792);
+}
+
+header nav ul li .drop1{
+    display:none;
+}
+header nav ul li:hover .drop1{
+    display: block;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 2px 5px grey;
+}
+header nav ul li .drop1 li{
+    display: block;
+    padding-top: 10px;
+}
+header nav ul li .drop1 li:hover{
+    padding: 5px 0;
+    background-color: rgba(173, 198, 190, 0.258);
+    border-radius: 5px;
+}
+header nav ul li .drop1 li span{
+    font-size: 15px;
+    color: rgba(27, 26, 26, 0.822);
+}
+
+header nav ul li .drop2{
+    display:none;
+}
+header nav ul li:hover .drop2{
+    width: auto;
+    height: 550px;
+    margin-left: -3cm;
+    padding: 50px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 1px 2px 5px grey;
+}
+header nav ul li .drop2 li{
+    padding-top: 10px;
+    display: block;
+}
+header nav ul li .drop2 li span{
+    line-height: 25px;
+    font-size: 15px;
+    color: rgba(27, 26, 26, 0.822);
+}
+header nav ul li .drop2 li span:hover{
+    text-decoration: underline;
+}
+
+header nav ul li .drop3{
+    display:none;
+}
+header nav ul li:hover .drop3{
+    width: 180px;
+    display: block;
+    padding: 5px;
+    display: block;
+    position: absolute;
+    padding-left: 30px;
+    background-color: white;
+    box-shadow: 1px 2px 5px grey;
+}
+header nav ul li .drop3 li{
+    display: block;
+    padding-top: 10px;
+}
+header nav ul li .drop3 li:hover{
+    padding: 5px 0;
+    background-color: rgba(173, 198, 190, 0.258);
+    border-radius: 5px;
+}
+header nav ul li .drop3 li .drop3-1{
+    display: none;
+}
+header nav ul li .drop3 li:hover .drop3-1{
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: -0cm;
+    left: 5cm;
+    background-color: white;
+    line-height: 30px;
+    box-shadow: 1px 1px 5px grey;
+}
+header nav ul li .drop3 li .drop3-1 li{
+    padding: 10px;
+}
+
+header nav ul li .drop4{
+    display:none;
+}
+header nav ul li:hover .drop4{
+    width: 180px;
+    display: block;
+    padding: 5px;
+    position: absolute;
+    padding-left: 30px;
+    background-color: white;
+    box-shadow: 1px 2px 5px grey;
+}
+header nav ul li .drop4 li{
+    display: block;
+    padding-top: 10px;
+}
+header nav ul li .drop4 li:hover{
+    padding: 5px 0;
+    background-color: rgba(173, 198, 190, 0.258);
+    border-radius: 5px;
+}
+header nav ul li .drop4 li .drop4-1{
+    display: none;
+}
+header nav ul li .drop4 li:hover .drop4-1{
+    width: 120px;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: -0cm;
+    left: 5cm;
+    background-color: white;
+    line-height: 30px;
+    box-shadow: 1px 1px 5px grey;
+}
+header nav ul li .drop4 li .drop4-1 li{
+    padding: 10px;
+}
+header nav ul li .drop4 li .drop4-2{
+    display: none;
+}
+header nav ul li .drop4 li:hover .drop4-2{
+    width: 200px;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: -0cm;
+    left: 5cm;
+    background-color: white;
+    line-height: 30px;
+    box-shadow: 1px 1px 5px grey;
+}
+header nav ul li .drop4 li .drop4-2 li{
+    padding: 10px;
+}
+header nav ul li .drop4 li .drop4-3{
+    display: none;
+}
+header nav ul li .drop4 li:hover .drop4-3{
+    width: 150px;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: -0cm;
+    left: 5cm;
+    background-color: white;
+    line-height: 30px;
+    box-shadow: 1px 1px 5px grey;
+}
+header nav ul li .drop4 li .drop4-3 li{
+    padding: 10px;
+}
+header nav ul li .drop4 li .drop4-4{
+    display: none;
+}
+header nav ul li .drop4 li:hover .drop4-4{
+    width: 200px;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: -0cm;
+    left: 5cm;
+    background-color: white;
+    line-height: 30px;
+    box-shadow: 1px 1px 5px grey;
+}
+header nav ul li .drop4 li .drop4-4 li{
+    padding: 10px;
+}
+header nav ul li .drop4 li .drop4-5{
+    display: none;
+}
+header nav ul li .drop4 li:hover .drop4-5{
+    width: 250px;
+    display: block;
+    padding: 10px;
+    position: absolute;
+    top: -0cm;
+    left: 5cm;
+    background-color: white;
+    line-height: 30px;
+    box-shadow: 1px 1px 5px grey;
+}
+header nav ul li .drop4 li .drop4-5 li{
+    padding: 10px;
+}
+
+header nav ul i{
+   font-size: 12px;
+}
+header .icon1 .icon1-2:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+header .icon1 .icon1-1:hover{
+    transform: rotate(380deg);
+    transition: 0.5s;
+}
+header .icon1 i{
+    margin-right: 20px;
+    color: rgba(0, 0, 0, 0.669);
+}
+header .icon1 button{
+    padding: 10px 20px;
+    background-color: rgb(240, 65, 65);
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+header .icon1 button:hover{
+    background-color: red;
+}
+
+
+/* header close */
+
+
+.sec1{
+    width: 100%;
+    height: 600px;
+    background-image: url(/imge/layer02.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+.sec1 .layer{
+    height: 600px;
+    background-color: rgba(61, 122, 129, 0.904);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.sec1 .layer .sec1-heding {
+  text-align: center;
+}
+.sec1 .layer .sec1-heding h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.sec1 .layer .sec1-heding  img{
+    width: 30px;
+    background: transparent;
+    margin-right: 5px;
+}
+.sec1 .layer .sec1-heding span{
+    font-size: 22px;
+}
+.sec1 .layer .sec1-heding span i{
+    color: gold;
+}
+.sec1 .layer .hole-from{
+    width: 80%;
+}
+.sec1 .layer .hole-from .all{
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 15px;
+}
+.sec1 .layer .hole-from .all p{
+    border: 1px solid rgba(255, 255, 255, 0.313);
+    border-radius: 7px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+}
+.sec1 .layer .hole-from .all p:hover{
+    border: 1px solid rgba(255, 255, 255, 0.913);
+}
+.sec1 .layer .hole-from select{
+    width: 90%;
+    height: 40px;
+    outline: none;
+    border-radius: 7px;
+    margin-bottom: 15px;
+
+}
+.sec1 .layer .hole-from .sec1-select{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 0px;
+}
+
+.sec1 .layer .hole-from input{
+    width: 90%;
+    height: 40px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 10px;
+ 
+}
+
+.sec1 .layer .hole-from button{
+    border:none;
+    outline: none;
+    background: rgb(233, 21, 21);
+    padding: 7px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+
+
+}
+.sec1 .layer .hole-from .sec1-button{
+    display: flex;
+column-gap: 20px;
+    align-items: center;
+}
+.sec1 .layer .hole-from .sec1-button p{
+    color: #b5b9c4e4;
+}
+.sec1 .layer form{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #3d7a81;
+}
+.sec1 .layer .hole-from .last-content {
+    font-size: 20px;
+    margin-left: 30px;
+    color: #b5b9c4e4;
+}
+/* section 1 end  */
+
+.sec2{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.sec2-heading{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 60px;
+}
+.sec2-heading h2{
+    font-size: 38px;
+}
+.sec2-heading p{
+    font-size: 22px;
+}
+.sec2-heading p:hover{
+    text-decoration: underline;
+}
+.sec2 .car-menu-hole .car-menu{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.sec2 .car-menu-hole .car-menu .iteam1{
+    border-radius: 15px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    background-color: #ededed90;
+}
+
+.sec2 .car-menu-hole .car-menu .iteam1 img{
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.sec2 .car-menu-hole .car-menu .iteam1:hover img{
+    transition: 0.5s;
+    transform: scale(1.1,1.1);
+}
+.sec2 .car-menu-hole .car-menu .iteam1 h4{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.sec2 .car-menu-hole .car-menu .iteam1:hover  h4{
+    text-decoration-line: underline;
+}
+.sec2 .car-menu-hole .car-menu .iteam1 p{
+    font-size: 15px;
+    color:#6c727f;
+    margin-bottom: 10px;
+}
+/* section 2 end  */
+
+.sec3{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec3 h2{
+    font-size: 38px;
+    margin: 60px 0;
+}
+.sec3 .boxs{
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+.sec3 .boxs .box1{
+    width: 45%;
+    height: auto;
+    box-shadow: 1px 1px 5px grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sec3 .boxs .box1 .img1{
+   position: relative;
+   overflow: hidden;
+}
+.sec3 .boxs .box1 .img1 .span1{
+    width: 15%;
+    padding: 5px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.sec3 .boxs .box1 .img1 .span2{
+    width: 10%;
+    padding: 5px;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.sec3 .boxs .box1 .img1 img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.sec3 .boxs .box1:hover .img1 img{
+    transform: scale(1.05,1.05);
+    transition: 0.5s;
+}
+.sec3 .boxs .box1 .txt{
+    padding-top: 20px;
+}
+.sec3 .boxs .box1 .txt .txt1{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+.sec3 .boxs .box1 .txt .txt1 .icon .icon1:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+.sec3 .boxs .box1 .txt .txt1 .icon .icon2:hover{
+    transform: rotate(380deg);
+    transition: 0.5s;
+}
+.sec3 .boxs .box1 .txt .txt1 .icon i{
+    padding: 7px;
+    border: 1px solid rgb(207, 200, 200);
+    border-radius: 50%;
+}
+.sec3 .boxs .box1 .txt h3{
+    padding-left: 30px;
+}
+.sec3 .boxs .box1:hover .txt h3{
+    text-decoration: underline;
+    width: 80%;
+}
+.sec3 .boxs .box1 .txt h3 span{
+    color: grey;
+}
+.sec3 .boxs .box1 .txt h4{
+    padding: 10px 30px;
+}
+.sec3 .boxs .box1 .txt hr{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.sec3 .boxs .box1 .txt .txt-btm{
+    padding: 80px 30px;
+    text-align: center;
+    color: grey;
+}
+.sec3 .boxs .box1 .txt .txt-btm span{
+    padding-right: 5%;
+}
+.sec3 .boxs .box2{
+    width: 50%;
+}
+.sec3 .boxs .box2 .box2-1{
+    margin: 20px 0;
+    display: flex;
+    box-shadow: 1px 1px 5px grey;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sec3 .boxs .box2 .box2-1 .img2{
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.sec3 .boxs .box2 .box2-1:hover .img2 img{
+    transform: scale(1.05,1.05);
+    transition: 0.5s;
+}
+.sec3 .boxs .box2 .box2-1 .img2 span{
+    width: 15%;
+    padding: 2px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.sec3 .boxs .box2 .box2-1 .img2 img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt{
+    width: 60%;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt .txt1{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt .txt1 .icon .icon1:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt .txt1 .icon .icon2:hover{
+    transform: rotate(380deg);
+    transition: 0.5s;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt .txt1 .icon i{
+    padding: 7px;
+    border: 1px solid rgb(207, 200, 200);
+    border-radius: 50%;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt h3{
+    padding-top: 20px;
+}
+.sec3 .boxs .box2 .box2-1:hover .All-txt .txt h3{
+    text-decoration: underline;
+    width: 80%;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt h3 span{
+    color: grey;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt h4{
+    padding: 20px 0;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt .txt-btm {
+    padding-top: 40px;
+    color: grey;
+}
+.sec3 .boxs .box2 .box2-1 .All-txt .txt .txt-btm span {
+    padding-left: 5px;
+}
+
+/* section 3 end  */
+
+.sec4{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.sec4 ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.sec4 ul li{
+    width: 100%;
+}
+.sec4 ul li span{
+    width: 80px;
+    padding: 5px;
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.sec4 ul li img{
+    width: 100%;
+}
+.sec4 ul li span{
+    display: none;
+}
+.sec4 ul li:hover span{
+   display: block;
+}
+
+/* section 4 end  */
+
+.sec5{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec5 h2{
+    font-size: 38px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.sec5 .all-img{
+    width: 100%;
+    margin-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+.sec5 .all-img .cmn-img{
+    overflow: hidden;
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.sec5 .all-img .cmn-img img:hover{
+    transform: scale(1.05,1.05);
+    transition: 0.5s;
+}
+.sec5 .all-img .cmn-img img{
+    width: 60%;
+    border-radius: 50%;
+    text-align: center;
+}
+.sec5 .all-img .cmn-img h3{
+   padding-left: 30px;
+   padding-top: 20px;
+}
+.sec5 .all-img .cmn-img:hover h3{
+    text-decoration: underline;
+}
+
+/* section 5 end  */
+
+.sec6{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec6 h2{
+    font-size: 38px;
+    margin: 80px 0 30px 0;
+}
+.sec6 .boxs{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.sec6 .boxs .box{
+    width: 25%;
+    background-color: #3d7a8135;
+    padding: 30px;
+    border-radius: 10px;
+}
+.sec6 .boxs .box i{
+    font-size: 30px;
+    color: #3d7a81;
+}
+.sec6 .boxs .box h3{
+    padding-top: 40px;
+    font-size: 25px;
+}
+
+/* section 6 end  */
+
+.sec7{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec7 h2{
+    font-size: 38px;
+    margin: 80px 0 30px 0;
+}
+.sec7 .boxs{
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.sec7 .boxs .box1{
+    width: 45%;
+    height: auto;
+    box-shadow: 1px 1px 5px grey;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sec7 .boxs .box1 .img1{
+   height: 250px;
+   position: relative;
+   overflow: hidden;
+}
+.sec7 .boxs .box1 .img1 .span1{
+    width: 25%;
+    padding: 5px;
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.sec7 .boxs .box1 .img1 .span2{
+    width: 15%;
+    padding: 5px;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+.sec7 .boxs .box1 .img1 img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.sec7 .boxs .box1:hover .img1 img{
+    transform: scale(1.05,1.05);
+    transition: 0.5s;
+}
+.sec7 .boxs .box1 .txt{
+    padding-top: 20px;
+}
+.sec7 .boxs .box1 .txt .txt1{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+.sec7 .boxs .box1 .txt .txt1 .icon .icon1:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.5s;
+}
+.sec7 .boxs .box1 .txt .txt1 .icon .icon2:hover{
+    transform: rotate(380deg);
+    transition: 0.5s;
+}
+.sec7 .boxs .box1 .txt .txt1 .icon i{
+    padding: 7px;
+    border: 1px solid rgb(207, 200, 200);
+    border-radius: 50%;
+}
+.sec7 .boxs .box1 .txt h3{
+    padding-left: 30px;
+}
+.sec7 .boxs .box1:hover .txt h3{
+    text-decoration: underline;
+    width: 80%;
+}
+.sec7 .boxs .box1 .txt h3 span{
+    color: grey;
+}
+.sec7 .boxs .box1 .txt h4{
+    padding: 10px 30px;
+}
+.sec7 .boxs .box1 .txt hr{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.sec7 .boxs .box1 .txt .txt-btm{
+    padding: 20px 30px;
+    text-align: center;
+    color: grey;
+}
+.sec7 .boxs .box1 .txt .txt-btm span{
+    padding-right: 5%;
+}
+.sec7 .boxs .box1 .txt .txt-btm span i{
+    padding-top: 5%;
+}
+
+/* section 7 end  */
+
+.sec8{
+    width: 90%;
+    margin:  90px auto;
+    background-color: #3d7a8135;
+    padding: 50px;
+}
+.sec8 .boxs{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.sec8 .boxs .box1{
+    width: 30%;
+}
+.sec8 .boxs .box1 h2{
+    margin: 20px 0;
+    font-size: 38px;
+}
+.sec8 .boxs .box1 p{
+    margin: 20px 0;
+color: grey;
+}
+.sec8 .boxs .box1 a{
+    padding: 10px;
+   background-color: red;
+   color: white;
+   border-radius: 8px;
+}
+.sec8  .boxs .box2{
+    width: 70%;
+}
+.sec8 .box2 .all-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sec8 .box2 .all-img .cmn-img{
+    width: 100%;
+
+}
+.sec8 .box2 .all-img .cmn-img img{
+    width: 100%;
+}
+.sec8 .box2 .all-img .cmn-img h3{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+/* section 8 end  */
+
+.sec9{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec9 h2{
+    font-size: 38px;
+    margin: 80px 0 30px 0;
+}
+.sec9 .boxs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.sec9 .boxs .box{
+    width: 100%;
+}
+.sec9 .boxs .box .box1{
+    width:100%;
+    position: relative;
+}
+.sec9 .boxs .box:hover .box1 img{
+    overflow: hidden;
+    transform: scale(1.05,1.05);
+    transition: 0.5s;
+}
+.sec9 .boxs .box .box1 .spna1{
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 25px;
+    background-color: rgba(20, 20, 36, 0.614);
+    color: white;
+    border-radius: 10px;
+}
+.sec9 .boxs .box .box1 .spna2{
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    z-index: 2;
+}
+.sec9 .boxs .box .box1 .spna3{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: white;
+    z-index: 2;
+}
+.sec9 .boxs .box .box1 img{
+    width: 100%;
+    border-radius: 10px;
+    transform: scale(1,1);
+    transition: 0.5s;
+}
+.sec9 .boxs .box .box1 .layer{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(20, 20, 36, 0.614);
+    position: absolute;
+    bottom: 5px;
+    z-index: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.sec9 .boxs .box h3{
+    margin-top: 30px;
+}
+.sec9 .boxs .box:hover h3{
+    text-decoration: underline;
+}
+
+/* section 9 end  */
+
+footer{
+    width: 100%;
+    margin-top: 80px;
+    background-color: #09152e;
+}
+.footer{
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+}
+.footer .box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer .box1 p{
+   padding: 50px 0 30px 0;
+   font-size: 20px;
+}
+.footer hr{
+    border-color: grey;
+    margin-bottom: 30px;
+}
+.footer .boxs{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .boxs .box span{
+    font-size: 20px;
+}
+.footer .boxs .box li{
+    color: grey;
+    line-height: 30px;
+}
+.footer .boxs .box li:hover{
+   text-decoration: underline;
+}
+.footer .boxs .box p{
+    padding: 20px 0;
+    color: grey;
+}
+.footer .boxs .box .f-btn a{
+    color: white;
+    background-color: #030c21;
+    padding: 10px;
+    border-radius: 5px;
+}
+.footer .boxs .box .f-btn a:hover{
+    background-color: #102b6cce;
+}
+.footer .f-btm{
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .f-btm p{
+    color: grey;
+}
+.footer .f-btm a{
+    color: white;
+}
+.footer .f-btm .icon{
+   display: flex;
+   position: relative;
+}
+.footer .f-btm .icon li span{
+    display: none;  
+}
+.footer .f-btm .icon li:hover span{
+    width: 80px;
+    display: block;
+    position: absolute;
+    top: -40px;
+    background-color: #030c21;
+    padding: 10px;
+    border-radius: 10px;
+}
+.footer .f-btm .icon li i{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+
+/* footer end  */
+
+
+
+
+
+
+@media(max-width:1025px){
+    header .menu{
+        font-size: 30px;
+        display: block;
+    }
+    header nav{
+        display: none;
+    }
+    .sec2 .car-menu-hole .car-menu{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: auto;
+    }
+    .sec2 .car-menu-hole .car-menu .iteam1{
+        margin-top: 20px;
+    }
+    .sec3 .boxs .box1 .img1 .span1{
+        width: 25%;
+    }
+    .sec3 .boxs .box1 .img1 .span2{
+        width: 20%;
+    }
+    .sec3 .boxs .box1 .txt .txt-btm{
+        padding: 80px 0px;
+        font-size: 14px;
+    }
+    .sec3 .boxs .box2 .box2-1 .img2 span{
+        width: 25%;
+    }
+    .sec3 .boxs .box2 .box2-1 .All-txt .txt .txt-btm {
+        padding-top: 40px;
+        font-size: 10px;
+        color: grey;
+    }
+    .sec7 .boxs{
+        width: 100%;    
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .sec7 .boxs .box1{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+
+}
+
+
+@media(max-width:769px){
+    .side-btn{
+        display: none;
+    }
+    .sec1 .layer{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec3 .boxs{
+        flex-direction: column;
+    }
+    .sec3 .boxs .box1{
+        width: 100%;
+    }
+    .sec3 .boxs .box2{
+        width: 100%;
+        display: block;
+    }
+    .sec3 .boxs .box2 .box2-1{
+        margin: 20px 0;
+        width: 100%;
+    }
+    .sec3 .boxs .box2 .box2-1 .All-txt .txt .txt-btm {
+       text-align: center;
+    }
+    .sec4 ul{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .sec5 .all-img{
+        margin: 0;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+    .sec6 .boxs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+    .sec6 .boxs .box{
+        width: 100%;
+    }
+    .sec8 .boxs{
+        flex-direction: column;
+    }
+    .sec8 .boxs .box1{
+        width: 100%;
+    }
+    .sec8 .boxs .box2{
+        padding-top: 30px;
+        width: 100%;
+    }
+    .footer .box1{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer .box1 p{
+        padding: 20px 0 30px 0;
+        font-size: 18px;
+     }
+     .footer .boxs{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer .boxs .box span{
+        font-size: 18px;
+    }
+    
+}
+
+
+
+
+@media(max-width:426px){
+    .last-content{
+        display: none;
+    }
+    
+    .sec2 .car-menu-hole .car-menu{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: auto;
+    }
+    .sec2 .car-menu-hole .car-menu .iteam1{
+        margin-top: 20px;
+        margin-right: 5px;
+    }
+    .sec7 .boxs{
+        width: 100%;    
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .sec7 .boxs .box1{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .sec8 .box2 .all-img .cmn-img h3{
+        margin: 0;
+    }
+    .sec9 .boxs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        column-gap: 30px;
+    }
+    .sec9 .boxs .box{
+        width: 100%;
+    }
+    .sec9 .boxs .box h3{
+        margin-bottom: 30px;
+    }
+    .footer .boxs .box .f-btn a{
+        color: white;
+        background-color: #030c21;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 13px;
+    }
+    .footer .f-btm{
+        width: 100%;
+        display: block;
+        text-align: center;
+     }
+     .footer .f-btm .icon{
+        margin-top: 50px;
+        margin-left: 90px;
+     }
+    
+}
